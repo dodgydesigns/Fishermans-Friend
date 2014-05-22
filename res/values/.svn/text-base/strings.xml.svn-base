@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fisherman\'s\ Friend</string>
+    <string name="new_catch">New Catch</string>
+    <string name="preferences">Settings</string>
+        
+    <string name="location">Current Location</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    
+    <string name="species">Species:</string>
+    <string name="length">Length:</string>
+    <string name="weight">Weight:</string>
+    
+    <string name="description">Rig</string>
+    <string name="photoButton">Take Photo</string>
+    <string name="WeatherTitle">Weather</string>
+    <string name="date">Date</string>
+</resources>

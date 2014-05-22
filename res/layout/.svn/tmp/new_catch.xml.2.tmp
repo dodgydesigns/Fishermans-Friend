@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/RelativeLayout1"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:id="@+id/dateLabel"
+		android:layout_alignTop="@+id/RelativeLayout1"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingLeft="20dp" />
+	<TextView
+		android:id="@+id/weatherLabel"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/WeatherTitle"
+		android:layout_marginTop="10dp"
+		android:paddingLeft="20dp"
+		android:layout_below="@+id/dateLabel"
+		android:layout_alignParentLeft="true" />
+	<TextView
+		android:id="@+id/latitude"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_marginTop="10dp"
+		android:paddingLeft="20dp"
+		android:layout_below="@+id/weatherLabel"
+		android:text="@string/latitude" />
+	<TextView
+		android:id="@+id/speciesLabel"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:paddingLeft="20dp"
+		android:layout_below="@+id/latitude"
+		android:text="@string/species" />
+	<TextView
+		android:id="@+id/longitude"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/longitude"
+		android:paddingLeft="20dp"
+		android:layout_alignBaseline="@+id/latitude"
+		android:layout_alignBottom="@+id/latitude"
+		android:layout_toRightOf="@+id/latitude" />
+	<TextView
+		android:id="@+id/rigDescriptionLabel"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:paddingLeft="20dp"
+		android:layout_below="@+id/speciesTextbox"
+		android:layout_toRightOf="@+id/newCaptureTitleRow"
+		android:layout_marginTop="10dp"
+		android:text="@string/description" />
+	<RatingBar
+		android:id="@+id/ratingBar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/rigDescription"
+		android:layout_marginTop="20dp"
+		android:layout_centerHorizontal="true" />
+	<ImageView
+		android:id="@+id/picture"
+		android:layout_width="240dp"
+		android:layout_height="240dp"
+		android:layout_below="@+id/ratingBar"
+<<<<<<< .mine
+		android:layout_alignLeft="@+id/ratingBar"
+		android:layout_alignRight="@+id/ratingBar" />
+	<ImageView
+		android:src="@drawable/logo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/imageView1"
+		android:layout_alignParentTop="true"
+		android:layout_alignRight="@+id/speciesTextbox"
+		android:layout_marginRight="25dp"></ImageView>
+	<EditText
+		android:id="@+id/speciesTextbox"
+		android:layout_width="fill_parent"
+		android:layout_height="48dp"
+		android:paddingLeft="20dp"
+		android:layout_alignTop="@+id/speciesLabel"
+		android:layout_toRightOf="@+id/speciesLabel"
+		android:layout_marginLeft="25dp"
+		android:layout_marginRight="25dp">
+	</EditText>
+	<EditText
+		android:id="@+id/rigDescription"
+		android:layout_width="fill_parent"
+		android:layout_height="48dp"
+		android:layout_alignTop="@+id/rigDescriptionLabel"
+		android:layout_alignLeft="@+id/speciesTextbox"
+		android:layout_marginRight="25dp">
+	</EditText>
+	<Button 
+		android:id="@+id/okButton" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:layout_below="@+id/picture" 
+		android:layout_alignLeft="@+id/picture" 
+		android:text="Save" 
+		android:layout_marginLeft="35dp" />
+	<Button 
+		android:id="@+id/cancelButton" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:layout_alignBaseline="@+id/okButton" 
+		android:layout_alignBottom="@+id/okButton" 
+		android:layout_alignRight="@+id/picture" 
+		android:text="Cancel" 
+		android:layout_marginRight="35dp" />
+=======
+		android:layout_alignLeft="@+id/ratingBar"
+		android:layout_alignRight="@+id/ratingBar" />
+	<ImageView
+		android:src="@drawable/logo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/imageView1"
+		android:layout_alignParentTop="true"
+		android:layout_alignRight="@+id/speciesTextbox"
+		android:layout_marginRight="25dp"></ImageView>
+	<EditText
+		android:id="@+id/speciesTextbox"
+		android:layout_width="fill_parent"
+		android:layout_height="48dp"
+		android:paddingLeft="20dp"
+		android:layout_alignTop="@+id/speciesLabel"
+		android:layout_toRightOf="@+id/speciesLabel"
+		android:layout_marginLeft="25dp"
+		android:layout_marginRight="25dp">
+	</EditText>
+	<EditText
+		android:id="@+id/rigDescription"
+		android:layout_width="fill_parent"
+		android:layout_height="48dp"
+		android:layout_alignTop="@+id/rigDescriptionLabel"
+		android:layout_alignLeft="@+id/speciesTextbox"
+		android:layout_marginRight="25dp">
+	</EditText>
+	<Button
+		android:background="@drawable/ok_up_button"
+		android:id="@+id/okButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/picture"
+		android:layout_alignParentBottom="true"
+		android:layout_marginLeft="25dp"
+		android:layout_marginBottom="25dp"></Button>
+	<Button
+		android:background="@drawable/cancel_up_button"
+		android:id="@+id/cancelButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignRight="@+id/picture"
+		android:layout_alignParentBottom="true"
+		android:layout_marginRight="25dp"
+		android:layout_marginBottom="25dp"></Button>
+>>>>>>> .r24
+</RelativeLayout>

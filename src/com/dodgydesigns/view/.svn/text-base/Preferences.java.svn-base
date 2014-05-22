@@ -1,0 +1,31 @@
+package com.dodgydesigns.view;
+
+import java.io.BufferedWriter;
+import java.io.IOException;
+
+import android.app.Dialog;
+import android.content.Context;
+import android.util.Log;
+
+import com.dodgydesigns.R;
+
+public class Preferences extends Dialog
+{
+
+	public Preferences( Context context, BufferedWriter prefsFile )
+    {
+	    super( context );
+	    
+	    setContentView( R.layout.preferences );
+	    
+	    try
+        {
+	        prefsFile.write( "some prefs" );
+        }
+        catch( IOException e )
+        {
+        	Log.e( "Preferences", "error writing" );
+        }
+    }
+
+}

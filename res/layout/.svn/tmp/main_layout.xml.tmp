@@ -1,0 +1,67 @@
+<RelativeLayout
+	android:id="@+id/relativeLayout1"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<Gallery
+		android:id="@+id/gallery"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"></Gallery>
+
+	<FrameLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/gallery">
+		<view
+			android:id="@+id/mapview"
+			class="com.google.android.maps.MapView"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:clickable="true"
+			android:apiKey="07s4P6WSagSxPoBJ_B8INZYFJeFHaW_zUol_raQ" />
+
+		<RelativeLayout
+			android:id="@+id/buttonLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/gallery"
+			android:background="@drawable/titlebar">
+			<Button
+				android:id="@+id/settingsButton"
+				android:background="@drawable/settings_button"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="20dp"
+				android:background="#AA000000"
+				android:textColor="#FFFFFFFF"
+				android:textSize="24dp"
+				android:text="Settings"></Button>
+			<Button
+				android:id="@+id/new_Button"
+				android:background="@drawable/new_button"
+				android:layout_toLeftOf="@+id/settingsButton"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:background="#AA000000"
+				android:textColor="#FFFFFFFF"
+				android:textSize="24dp"
+				android:text="New"
+				android:layout_marginLeft="20dp"></Button>
+			<ImageButton
+				android:id="@+id/title_Button"
+				android:src="@drawable/title_button"
+				android:background="@drawable/title_button"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_alignParentLeft="true"></ImageButton>
+		</RelativeLayout>
+
+	</FrameLayout>
+
+</RelativeLayout>

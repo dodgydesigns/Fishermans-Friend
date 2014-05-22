@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/RelativeLayout1"
+        android:paddingLeft="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF00FF00" />
+
+    <TextView
+        android:id="@+id/weatherLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dateLabel"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:text="@string/WeatherTitle"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/weatherLabel"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:text="@string/latitude"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF00FF00" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/latitude"
+        android:layout_alignBottom="@+id/latitude"
+        android:layout_toRightOf="@+id/latitude"
+        android:paddingLeft="20dp"
+        android:text="@string/longitude"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF00FF00" />
+
+    <TextView
+        android:id="@+id/speciesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/latitude"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="5dp"
+        android:text="@string/species"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/speciesTextbox"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/speciesLabel"
+        android:layout_alignTop="@+id/speciesLabel"
+        android:layout_toRightOf="@+id/speciesLabel"
+        android:background="#00000000"
+        android:inputType="textCapWords"
+        android:singleLine="true"
+        android:textColor="#FFFFFFFF" />
+
+    <TextView
+        android:id="@+id/lengthLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/speciesLabel"
+        android:layout_toRightOf="@+id/speciesTextbox"
+        android:paddingLeft="20dp"
+        android:paddingRight="5dp"
+        android:text="@string/length"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/lengthTextbox"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/lengthLabel"
+        android:layout_alignTop="@+id/lengthLabel"
+        android:layout_toRightOf="@+id/lengthLabel"
+        android:background="#00000000"
+        android:singleLine="true"
+        android:textColor="#FFFFFFFF" />
+
+    <EditText
+        android:id="@+id/weightTextbox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rigDescription"
+        android:layout_alignBaseline="@+id/speciesTextbox"
+        android:layout_alignBottom="@+id/speciesTextbox"
+        android:layout_alignTop="@+id/speciesTextbox"
+        android:layout_toRightOf="@+id/weightLabel"
+        android:background="#00000000"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFFFF" />
+
+    <TextView
+        android:id="@+id/rigDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speciesTextbox"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/newCaptureTitleRow"
+        android:paddingLeft="20dp"
+        android:text="@string/description"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/rigDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/speciesTextbox"
+        android:layout_alignTop="@+id/rigDescriptionLabel"
+        android:layout_marginRight="5dp"
+        android:background="#00000000"
+        android:inputType="textCapSentences"
+        android:singleLine="true"
+        android:textColor="#FFFFFFFF" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rigDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_above="@+id/okButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ratingBar"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/picture"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:text="OK" >
+    </Button>
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/picture"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Cancel" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/weightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/weightTextbox"
+        android:layout_toRightOf="@+id/lengthTextbox"
+        android:paddingLeft="20dp"
+        android:paddingRight="5dp"
+        android:text="@string/weight"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
+
+</RelativeLayout>

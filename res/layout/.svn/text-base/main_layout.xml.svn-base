@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </Gallery>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gallery" >
+
+        <view
+            android:id="@+id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:apiKey="07s4P6WSagSxPoBJ_B8INZYFJeFHaW_zUol_raQ"
+            class="com.google.android.maps.MapView"
+            android:clickable="true" />
+
+        <RelativeLayout
+            android:id="@+id/buttonLayoutTop"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/gallery"
+            android:background="#AA000000" >
+
+            <ImageButton
+                android:id="@+id/new_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/new_catch_button_style" >
+
+            </ImageButton>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:id="@+id/buttonLayoutBottom"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/gallery"
+            android:background="#AA000000" >
+
+            <ImageButton
+                android:id="@+id/settings_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/settings_button_style" >
+
+            </ImageButton>
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>
